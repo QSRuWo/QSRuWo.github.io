@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta id="Author" content="Hongzhang Wang" property="property">
+    <meta id="Robots" content="1" property="property">
+    <meta id="Keywords" content="2" property="property">
+    <meta id="Description" content="3" property="property">
+</head>
+<body>
+<h1><strong>A Report of a Survey of Private 5G</strong></h1>
+<p>Hongzhang Wang (A paper instructed by <a href="https://www.cse.wustl.edu/~jain/index.html"> Prof. Raj Jain</a>)</p>
+
+
+<h2>Abstract:</h2>
+<p>With the continuous coverage of the construction of 5G mobile networks, the number of people using 5G in the world continues to rise, and the application of 5G networks in the industry market has also begun to take the lead. Major operators have also launched their own private 5G network construction plans for 5G private network enterprises, as well as the product application ecology of bottom applications. The three scenarios of 5G: high speed, massive connectivity, and low latency, effectively promote the development of the Internet of Things to the intelligent Internet of Things.<a href="#Reference1">[1]</a> In various emerging trends and use cases of 5G networks, private 5G networks provide multiple advantages, which can enhance the industrial Internet of Things. The application scope of 5G is no longer mobile phones, but will face the future of VR/AR, smart cities, smart agriculture, industrial Internet, Internet telephony, driverless, smart home, smart medicine UAV and other industries.<a href="#Reference2">[2]</a> This report mainly describes the survey of private 5G networks at some levels.</p>
+
+<h2>Key words：</h2>
+<p>5G, Private 5G, 5th Generation Mobile Communication Technology</p>
+
+<h2>Table of Contents</h2>
+<dl>
+    <dt><a href="#1">1. Introduction</a></dt>
+    <dd><a href="#1.1">1.1 Introduction to 5G</a></dd>
+    <dd><a href="#1.2">1.2 Introduction to Private 5G</a></dd>
+    <dd><a href="#1.3">1.3 Structure Introduction</a></dd>
+
+    <dt><a href="#2">2. Private 5G Analysis</a></dt>
+    <dd><a href="#2.1">2.1 Why Private 5G</a></dd>
+    <dd><a href="#2.2">2.2 How Private 5G Works</a></dd>
+    <dd><a href="#2.3">2.3 Advantages of Private 5G</a></dd>
+    <dd><a href="#2.4">2.4 Some Requirements of Private 5G</a></dd>
+    <dd><a href="#2.5">2.5 Some Enabling Solutions for Private 5G</a></dd>
+
+    <dt><a href="#3">3. 3GPP Introduction</a></dt>
+    <dd></dd>
+    <dt><a href="#4">4. Conclusion</a></dt>
+    <dd></dd>
+    <dt><a href="#Reference">Reference</a></dt>
+    <dd></dd>
+    <dt><a href="#Acronyms">Acronyms</a></dt>
+    <dd></dd>
+</dl>
+
+
+<h2><a id="1">1 Introduction</a></h2>
+
+<h2><a id="1.1">1.1 Introduction to 5G</a></h2>
+<p>The fifth generation mobile communication technology, referred to as 5G for short, is a network infrastructure to realize human-computer and object inter-connection, and is also a new generation of broadband mobile communication technology with high speed, low delay and large connection characteristics.
+
+    The International Telecommunication Union (ITU) has defined three categories of 5G application scenarios, namely, massive machine communication (mMTC); Ultra high reliability and low delay communication (uRLLC);<a href="#Reference3">[3]</a> Enhanced Mobile Broadband (eMBB). MMTC is mainly oriented to the application requirements targeting sensing and data acquisition, such as smart cities, smart homes, etc. uRLLC is mainly aimed at industrial applications with high requirements for delay and reliability, such as industrial control, telemedicine, etc; eMBB is mainly aimed at providing more extreme application experience for mobile Internet users with the explosive growth of mobile Internet traffic.
+
+    The key performance indicators of 5G meet the requirements of 5G's diversified application scenarios through diversification. Among the eight key performance indicators of 5G defined by ITU, large connection, low delay and high speed are the most significant features of 5G. The user experience rate reaches 1Gbps, the delay is as low as 1ms, and the user connection capacity reaches 1 million connections/km2.
+
+    Mobile communication technology is updated every ten years, and has experienced 1G to 4G development. Each iteration has greatly promoted industrial upgrading and economic and social development. With the transition from analog communication to digital communication, mobile communication has come into being in the transition from 1G to 2G for thousands of households; The transformation from voice service to data service has increased the transmission rate hundreds of times, which has promoted the popularization and prosperity of mobile Internet applications in the upgrading from 2G to 3G and 4G. At present, mobile network has profoundly changed people's communication, exchange and even the entire way of life, and integrated into all aspects of social life. 4G network solves the problem of anytime and anywhere communication, and creates a prosperous Internet economy. However, with the rapid development of mobile Internet and the explosive growth of mobile data traffic, 4G mobile communication system can not meet the demand of the future mobile data traffic surge, and 5G system is born accordingly.<a href="#Reference4">[4]</a>
+
+    5G needs to solve people to people communication, provide users with more immersive business experience, such as virtual reality, augmented reality, ultra high-definition 3D video, and more, meet the needs of mobile medical, industrial control, Internet of Vehicles and other Internet of Things applications, and solve the problems of people to things, and things to things communication.<a href="#Reference1">[1]</a> Finally, 5G will become a key new infrastructure supporting the digital, networked and intelligent transformation of the economy and society, and penetrate into all areas of the economy and society.</p>
+
+<h2><a id="1.2">1.2 Introduction to Private 5G</a></h2>
+<p>
+    The private 5G network is a wireless local area network (LAN), also known as the local 5G network. It uses mobile 5G technology to create a unified, service optimized, private and secure communication network in a specific area. The private 5G provides the same speed, delay and other advantages as 5G.
+
+    The current network connection has more or less drawbacks. For example, Ethernet requires fixed cables and has strong limitations; Wi-Fi is easier to be attacked by hackers than cellular connection; The functions of 4G LTE are not comprehensive enough;<a href="#Reference4">[4]</a> Compared with 4G network, 5G has more powerful communication and bandwidth capabilities, which can meet the requirements of wide coverage, high speed and stability of Internet of Things applications. 5G has laid a foundation for the realization of the Internet of Things in terms of intelligent transportation and smart grid, and made up for the shortcomings of 4G. 5G can better meet the demand of large companies for more choices in network.
+
+    Customized private communication network solutions are provided to meet the needs of users in the industry market. Self built private network, self built access network by renting core network and network slicing are the three types of network services at present. The standard deployed cellular network of various forms of 3GPP is the way used by the current private network. For example, the IMS core system 5G professional network private used by Youhongtian Technology has a low-power wide area network (LPWAN) and a broadband wireless 5G private network based on 700M band. The private network private can be better applied to the deployment of small and medium-sized enterprises, and achieve security and service assurance. Some industry users are willing to build their own private networks, even if the network slice can provide a similar private network experience. In the 4G era, it is not uncommon for industry customers to build their own LTE private networks. However, the cost of building their own private 5G networks is the highest but also the most reliable solution. According to research, the market value of global private LTE in 2018 is $2.449 billion. It is estimated that the private 5G private network will continue to grow at a compound annual growth rate of 14.7% in the future, and will reach $5.381 billion by 2024.<a href="#Reference1">[1]</a>
+</p>
+
+<h2><a id="1.3">1.3 Structure Introduction</a></h2>
+<p>
+    This film report is divided into three parts. The first part is the basic introduction of 5G and private 5G. The second part is the analysis of private 5G technology. The third part is the summary.
+</p>
+
+<h2><a id="2">2 Private 5G Analysis</a></h2>
+
+<h2><a id="2.1">2.1 Why Private 5G</a></h2>
+<p>
+    The private 5G network uses 5G technology to build and create a network, which is a large wireless LAN. Private 5G networks provide unified connectivity with various advantages and optimized services, which can also be called local 5G networks. Such a network can carry all the features of a 5G network, such as reducing latency and increasing speed.
+
+    Although the private LTE network running on 4G network technology has been commercialized and widely used, owning a private 5G network has many advantages in efficiency and security. Therefore, many institutions and users want to take full advantage of this upcoming trend. They are now looking forward to private 5G networks.
+
+    Because private 5G networks do not need to be connected to public telecommunications networks, they can provide more powerful security guarantees. Therefore, they are very attractive to companies that require a very high level of security.
+
+    The private 5G network can be built according to the specific specifications of the company, because this technology is highly customizable and does not have to be selected from telecommunications products. It can manage and analyze data internally. The private 5G network means that customers will no longer have to wait. The overall 5G deployment takes time to provide real national services, especially in the indoor private network, which can also provide strong connectivity.
+
+    With the increasing demand for business data, the dedicated 5G network can help enterprises succeed more. Because the dedicated 5G network has more reliability, higher capacity, lower latency 5G and edge computing. Dedicated 5G networks enhance network coverage by taking advantage of improved performance and reduced latency. It improves network cost and efficiency through a flexible and scalable architecture, and can control data and analysis and enhance data security.<a href="#Reference5">[5]</a>
+
+    The difference between the private 5G network and the public network is that it can be configured according to the specific needs of the location, and the configuration depends on the type of work carried out in each location. Private networks also allow organizations to determine the quality of network coverage and deployment schedules.
+
+    In order to respond to problems more quickly, the private 5G network can be installed and maintained by field personnel. Provide network owners with a certain degree of control that may not be realized on the public network to improve security: the company determines which users are connected and the data can be included in the site. Keeping the data on site can also reduce latency.<a href="#Reference6">[6]</a> At the same time, in order to reduce the risk of service level changes caused by third-party use, private networks can even run on private spectrum.
+</p>
+
+<h2><a id="2.2">2.2 How Private 5G Works</a></h2>
+<p>
+    The working mode of the dedicated 5G network is the same as that of the public 5G network operated by the mobile network operator (MNO). Data is transmitted by edge devices to nearby access points, cellular base stations and other network infrastructures using wireless spectrum technology. Then, the data is transmitted by the infrastructure to the third station, namely the enterprise's internal network, through a secure wired connection. Data from edge devices can be sent to various applications and cloud services using this secure connection. The same process occurs in turn to transfer data back to the edge device.<a href="#Reference7">[7]</a>
+
+    The difference between public and private 5G networks is whether you have the permission or priority access to the wireless spectrum, and whether you own and operate the base station and infrastructure of the network.
+
+    The public 5G network enables mobile network operators to own and operate spectrum and network infrastructure. In addition, generally speaking, all customers of mobile network operators have the same network access rights. However, in contrast, in a private 5G network, private organizations own, operate, or have some degree of priority access to network infrastructure or spectrum. The number of network infrastructure and spectrum owned and operated may vary greatly.
+
+    The organization can own the network base station by virtue of the completely private 5G network, which is used for the wireless spectrum and other infrastructure of the network. This completely isolates its users from other MNO public networks, and allows them to fully control the network.
+</p>
+
+<h2><a id="2.3">2.3 Advantages of Private 5G</a></h2>
+<p>
+    Wireless networking: In order to achieve networking, efficiency and reliability, most companies still rely on wired connections such as Ethernet. Because these wired networks are huge and difficult to manage, private 5G networks may replace these wired networks. Free deployment, real-time change and lower deployment cost can be achieved through wireless connection networking, and intelligent transformation of production equipment can improve more follow-up space. 5G network can bring great benefits because it has many advantages and features. For example, because of its high speed, low latency and multi application support, it has all the basic features that replace the traditional wired network connection.<a href="#Reference8">[8]</a>
+
+    Independent operation and maintenance: In order to greatly reduce the company's dependence on public network providers, private 5G network deployment can be adopted. Moreover, this technology can also reduce the binding force of internal configuration and network application, and support more reliable localized operation and maintenance management. Autonomous business service provisioning can also provide several additional benefits in security, planning, resource management, monitoring, and utilization reporting.
+    security: Security is critical. Network operators will have all the rights to configure and protect the network in the way they want, so the dedicated 5G network will be more secure than all current wireless networks. All security policies do not need to rely on external service providers, can be fully controlled within the organization, and can be customized.
+</p>
+
+<h2><a id="2.4">2.4 Some Requirements of Private 5G</a></h2>
+<p>
+    Customization: In order to meet customers' needs in all aspects, additional functions can be flexibly added to 5GS. In order to deal with the particularity of customer use cases, 5GS should be designed in NPN; In PLMN, 5GS is built by user centered service traffic/user growth components and configuration settings. So they are different. For example, although the radio resource scheduling policy and 5G QoS identifier values are usually not available in solutions for carrier networks, these values should also be provided for dedicated 5GS to meet strict QoS constraints.<a href="#Reference8">[8]</a> Similarly, for use cases that require value-added functions (such as security, analysis and localization), the private 5GS is enriched by adding value to the REL-16+5G core (5GC) network functions in a plug and play manner.
+
+    Guaranteed QoS: To prevent any degradation of the target use case, the ability of key QoS parameters to operate around the clock is indispensable. The key QoS parameters of the dedicated 5G network include delay change, throughput, delay, availability, etc. Some dedicated 5G network use cases have more stringent performance requirements than public services in PLMN. For example, network physical control in manufacturing is applied in throughput (500 Mbps per device), high positioning accuracy (centimeter level), service availability and high connection density (100 devices/m2).
+</p>
+
+<h2><a id="2.5">2.5 Some Enabling Solutions for Private 5G</a></h2>
+<p>
+    A. Spectrum access options:
+    Making spectrum a convenient resource for enterprises is one of the key factors for the success of dedicated 5G networks. There are generally three options<a href="#Reference1">[1]</a>:
+
+    Shared spectrum (SS): spectrum bands of existing users (primary users) are shared and authorized by third-party users through the database aided spectrum sharing model. For example, in the United States, sharing citizen broadband radio service (CBRS) bands is allowed through the spectrum access system sharing model.
+
+    Licensed spectrum (LS): In a specific geographical area, a part of the available dedicated spectrum can be obtained. LS provides the highest predictability, so it is the first choice to support private ultra reliable low latency communication (URLLC) services. The private network owner can obtain LS in two ways: i) sublease it to the PLMN operator (PLMN Op) after signing the agreement, or ii) obtain LS directly from the national regulatory authority. Regulators in many countries are setting aside spectrum for vertical industries for the second case. For example, Germany is releasing 3.7-3.8 GHz frequencies for industrial dedicated 5G networks.
+
+    Unlicensed spectrum (ULS): a specific frequency band that can be used anywhere for free without access to rules or restrictions. This lowers the entry threshold for enterprise customers who want to deploy SNPN. 5G supports two options of using ULS, namely, licensed auxiliary access (LAA) NR-U and independent NR-U. ULS can be combined with other LS or shared spectrum used as anchors via LAA NR-U. At the other site, the independent NR-U only uses ULS in the 5 or 6 GHz band, and does not require LS.
+
+    In addition to various spectrum access options, the performance and deployment of private networks may be greatly affected by the range of available spectrum. Millimeter wave (26GHz and above) is easier to limit its signal within the boundary of private places than intermediate frequency spectrum (1-7GHz), and can provide higher throughput and lower delay. However, they are more densely deployed than IF because they require a large number of radiating points.
+
+    B. Deterministic transmission network
+
+    The ability of all networks to handle deterministic QoS sensitive traffic is a requirement of the services provided by URLLC, including the transmission network (TN). TN is the domain responsible for providing connectivity between different 5G components, and is not within the scope of 3GPP. TN in private networks has two key requirements:
+
+    TN should have the ability to establish multi-path connections on the network to achieve streaming transmission, and should have guaranteed performance levels in terms of delay, jitter, frame loss and reliability. The summary is that it should support deterministic QoS.
+
+    To reduce costs, the same TN infrastructure should be able to accommodate all heterogeneous dedicated 5G services.
+
+    TSN and Deterministic Network (DetNet) are connection solutions in private networks because they meet the requirements mentioned above. TSN aims to define an aggregation layer 2 (L2) network technology, which is a set of standards specified by IEEE 802. On the other hand, DetNet provides routes with deterministic QoS on Layer 3 (L3) routing segments, so it can be considered as an extension of TSN. In fact, DetNet mainly relies on the TSN standard to provide performance guarantees up to L2, although it can run on other underlying network technologies different from Ethernet.
+
+    C. Security and privacy features
+
+    The IEC 62443 series of specifications describe the specific security requirements that industrial networks should have. The standard defines four security levels according to different threat models, from SL1 (to protect any Internet user) to SL4 (to protect government organizations). The introduction of 5G technology in the operational technology (OT) industry needs to meet these requirements.
+
+    Mutual authentication between devices and networks and support for hardware security modules are two typical technologies in 5G's advanced security toolbox. In particular, 5G-AKA, EAP-AKA 'and EAP-TLS are the three authentication mechanisms included in 5G. The first two required conditions of the Universal Integrated Circuit Card (UICC) module (i.e. (e) Subscriber Identity Module (SIM) module) in the client device. EAP-AKA 'mechanism can be used by non 3GPP access networks such as Wi Fi. It is relatively simple to introduce this technology into IoT devices, because UICC module is not required in the case of EAP-TLS.
+
+    In SNPN, the private network operator (PN Op) managing the private network can complete the task of authorizing equipment through any of the above authentication mechanisms. In PNI NPN, the PLMN Op that manages the NPN can only use the first two authentication mechanisms above to authorize devices for the public network. In addition, the second level authentication of EAP allows private network operators to provide their own access control in PNI-NPN scenarios implemented with network slices. 3GPP version 16 is based on this authentication.
+
+    In addition, industrial networks have traditionally formed a single trust domain around them, so they are physically isolated. However, in the case of PNI-NPN, PLMN Op represents a separate trust domain. This requires means to ensure the privacy of OT network data. It includes isolation of operational and subscription information, as well as end-to-end encryption and integrity protection.
+
+    3GPP has defined advanced security and privacy mechanisms supporting private networks since the 16th edition, and provides solutions related to device to network communications, including device authentication (enterprise customers can achieve second authentication in the local data network), end-to-end traffic integrity and encryption (in the user and control planes), and device certificate management. In addition, other infrastructure related solutions should also be considered. Examples include transmission certification (allowing external verification of the compliance of traffic forwarding policies, and ensuring that data packets pass through the processing node as required) and remote authentication (ETSI NFV-SEC defines a transitive mechanism to ensure trust and responsibility for VNF and the underlying infrastructure).<a href="#Reference9">[9]</a>
+</p>
+
+<h2><a id="3">3 3GPP Introduction</a></h2>
+<p>
+    The 3rd Generation Partnership Project, referred to as 3GPP for short, is a technology for private 5G network applications. Its goal is to achieve a smooth transition from 2G networks to 3G networks, support easy network building, roaming and compatibility between systems, and ensure backward compatibility of future technologies. 3GPP is mainly formulated based on GSM core network, FDD is W-CDMA technology, TDD is TD-SCDMA technology, and it is the specification of the third generation technology of wireless interface.
+
+    In December 1998, a number of telecommunications standard organization partners signed the Third Generation Partnership Plan Agreement and signed 3GPP. The initial work scope of 3GPP is to formulate globally applicable technical specifications and technical reports for the third generation mobile communication system. The GSM core network and the UMTS based wireless access technology they support are the foundation of the third generation mobile communication system. The work scope of 3GPP was improved by increasing the research on UTRA long-term evolution system and standard formulation. The 7 organizational partners of 3GPP currently include ATIS, ETSI, TTC, ARIB, TTA, TSDSI and CCSA; There are more than 550 independent members.<a href="#Reference9">[9]</a> In addition, 3GPP has 13 market partners (MRPs), including TD-SCDMA Industry Alliance (TDIA) and TD-SCDMA Forum.
+
+    The Project Coordination Group (PCG) is responsible for overall coordination on behalf of the OP and is the top management organization of 3GPP, such as 3GPP organizational structure, time plan, work allocation, etc. The technical work is completed by the Technical Specifications Group (TSG). Before 3GPP, there were five TSGs in total. Later, CN and T were merged into CT, and GERAN was canceled. Therefore, there are only three TSGs at present, namely TSG RAN, TSG SA, and TSG CT. Among them, there are a number of working groups (WGs) that undertake different specific tasks. At present, there are 16 WGs in total. For example, TSG RAN includes RAN WG1, RAN WG2, RAN WG3, RAN WG4, RAN WG5 and RAN WG6, six working groups.<a href="#Reference10">[10]</a>
+
+    Release manages the standards and specifications formulated by 3GPP. The average version update cycle is one to two years. From R99 at the beginning of its establishment to R4, it has now developed to R16.
+
+    3GPP most often manages and carries out work in the form of study items and work items. In addition, 3GPP manages the standard texts in series. For example, the common WCDMA and TD-SCDMA access network standards are in the 25 series, the core network standards are in the 22, 23 and 24 series, and the LTE standard is in the 36 series.
+</p>
+
+<h2><a id="4">4 Conclusion</a></h2>
+<p>
+    Private 5G networks have become one of the hottest technical terms in 2022, but how many "productive" 5G private networks actually exist? EE Times, a sister media of ESMC, reviewed the progress of private 5G networks in January 2021, and found that most of the established networks were still in the trial operation stage. According to Dean Bubley, founder and analyst of Disruptive Analytics, the market research institution, the situation will remain the same to a large extent in 2022. This also means that the main application of communication technology will still be 5G for a long time to come.
+</p>
+
+
+
+<h2><a id="Reference">Reference</a></h2>
+<p>
+    <a id="Reference1">[1]</a>Q. Guo, J. Yin, W. Guo, Q. Zhang and S. Wu, "Analysis and Design of 5G Virtual Private Network for Electric Power Industry in China," 2022 IEEE 6th Information Technology and Mechatronics Engineering Conference (ITOEC), 2022, pp. 1985-1988, doi: 10.1109/ITOEC53115.2022.9734639.
+    <a href="https://ieeexplore.ieee.org/document/9734639">https://ieeexplore.ieee.org/document/9734639</a>
+</p>
+
+<p>
+    <a id="Reference2">[2]</a>H. -M. Chen, Y. -F. Lu, S. -Y. Chen, C. -J. Chang and Z. -X. Zheng, "Design of an NFV MANO Architecture for 5G Private Network with 5G CN Cloud-Edge Collaborative Mechanism," 2022 8th International Conference on Applied System Innovation (ICASI), 2022, pp. 92-95, doi: 10.1109/ICASI55125.2022.9774446.
+    <a href="https://ieeexplore.ieee.org/document/9774446">https://ieeexplore.ieee.org/document/9774446</a>
+</p>
+<p>
+    <a id="Reference3">[3]</a>Y. Guo and Y. Zhang, "Study on Core Network Security Enhancement Strategies in 5G Private Networks," 2021 IEEE 21st International Conference on Communication Technology (ICCT), 2021, pp. 887-891, doi: 10.1109/ICCT52962.2021.9657934.
+    <a href="https://ieeexplore.ieee.org/document/9657934">https://ieeexplore.ieee.org/document/9657934</a>
+</p>
+<p>
+    <a id="Reference4">[4]</a>T. -W. Huang, J. -C. Hung and C. -L. Chung, "A C-band 4096-QAM OFDM Data Link for 5G Private Network Applications," 2021 International Symposium on Antennas and Propagation (ISAP), 2021, pp. 1-2, doi: 10.23919/ISAP47258.2021.9614444.
+    <a href="https://ieeexplore.ieee.org/document/9614444">https://ieeexplore.ieee.org/document/9614444</a>
+</p>
+<p>
+    <a id="Reference5">[5]</a>W. Yan, Q. Shu and P. Gao, "Security risk prevention and control deployment for 5G private industrial networks," in China Communications, vol. 18, no. 9, pp. 167-174, Sept. 2021, doi: 10.23919/JCC.2021.09.013.
+    <a href="https://ieeexplore.ieee.org/document/9558720">https://ieeexplore.ieee.org/document/9558720</a>
+</p>
+<p>
+    <a id="Reference6">[6]</a>A. Aijaz, B. Holden and F. Meng, "Open and Programmable 5G Network-in-a-Box: Technology Demonstration and Evaluation Results," 2021 IEEE 7th International Conference on Network Softwarization (NetSoft), 2021, pp. 369-371, doi: 10.1109/NetSoft51509.2021.9492719.
+    <a href="https://ieeexplore.ieee.org/document/9492719">https://ieeexplore.ieee.org/document/9492719</a>
+</p>
+<p>
+    <a id="Reference7">[7]</a>E. C. Strinati et al., "Beyond 5G Private Networks: the 5G CONNI Perspective," 2020 IEEE Globecom Workshops (GC Wkshps, 2020, pp. 1-6, doi: 10.1109/GCWkshps50303.2020.9367460.
+    <a href="https://ieeexplore.ieee.org/document/9367460">https://ieeexplore.ieee.org/document/9367460</a>
+</p>
+<p>
+    <a id="Reference8">[8]</a>X. Guo, J. Yin, Y. Li, Z. Zhang, P. Xie and Y. Li, "Key Technologies and Applications for Intelligent Control of Power 5G Virtual Private Network," 2022 IEEE 10th Joint International Information Technology and Artificial Intelligence Conference (ITAIC), 2022, pp. 2555-2559, doi: 10.1109/ITAIC54216.2022.9836500.
+    <a href="https://ieeexplore.ieee.org/document/9836500">https://ieeexplore.ieee.org/document/9836500</a>
+</p>
+<p>
+    <a id="Reference9">[9]</a>X. Liu, D. Wang, M. Wu and Z. Dong, "Development and Application Research of 5G Private Network Equipment For Ship Construction," 2021 2nd Asia Symposium on Signal Processing (ASSP), 2021, pp. 130-134, doi: 10.1109/ASSP54407.2021.00028.
+    <a href="https://ieeexplore.ieee.org/document/9743221">https://ieeexplore.ieee.org/document/9743221</a>
+</p>
+<p>
+    <a id="Reference10">[10]</a>X. Krasniqi, B. Gashi and E. Hajrizi, "Leveraging private 5G deployments to drive research and innovation," 2022 29th International Conference on Systems, Signals and Image Processing (IWSSIP), 2022, pp. 1-5, doi: 10.1109/IWSSIP55020.2022.9854480.
+    <a href="https://ieeexplore.ieee.org/document/9854480">https://ieeexplore.ieee.org/document/9854480</a>
+</p>
+
+<h2><a id="Acronyms">Acronyms</a></h2>
+<ul>
+    <li>International Telecommunication Union (ITU)</li>
+    <li>massive machine communication (mMTC)</li>
+    <li>Ultra high reliability and low delay communication (uRLLC)</li>
+    <li>Enhanced Mobile Broadband (eMBB)</li>
+    <li>wireless local area network (LAN)</li>
+    <li>low-power wide area network (LPWAN)</li>
+    <li>mobile network operator (MNO)</li>
+    <li>citizen broadband radio service (CBRS)</li>
+    <li>ultra reliable low latency communication (URLLC)</li>
+    <li>licensed auxiliary access (LAA)</li>
+    <li>transmission network (TN)</li>
+    <li>Deterministic Network (DetNet)</li>
+    <li>operational technology (OT)</li>
+    <li>Project Coordination Group (PCG)</li>
+    <li>Technical Specifications Group (TSG)</li>
+    <li>working groups (WGs)</li>
+</ul>
+</body>
+</html>
